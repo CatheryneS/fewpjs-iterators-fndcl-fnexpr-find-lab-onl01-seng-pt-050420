@@ -1,5 +1,11 @@
-const testVar = {}
+function superbowlWin(arr) {
+  let winner;
 
-function testFunc() {
-  return "hi"
-}
+  arr.find(function(record){
+    if (record.result === "W") {
+      winner = record.year
+    }
+  })
+  console.log(winner)
+  return winner
+};
